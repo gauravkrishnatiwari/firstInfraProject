@@ -2,6 +2,12 @@ pipeline {
     agent any
 
     stages {
+
+        stage('Welcome Message') {
+            steps {
+                echo "Welcome to my First DevOps Infra Project"
+            }
+        }
         stage('Checkout') {
             steps {
                 checkout scm
